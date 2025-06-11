@@ -21,7 +21,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
       with:
-        fetch-depth: 0
+        fetch-depth: 1
     - name: "Login to docker registry"
       run: |
         curl --fail -s -H "Content-Type: application/json" -H "Authorization: Token $PRIVADO_API_TOKEN" -H "idt: $PRIVADO_API_TOKEN" -H "data-url: /ce/integrations/customers/$PRIVADO_API_ID/docker-registry-token" $PRIVADO_API_HOST/ce/integrations/customers/$PRIVADO_API_ID/docker-registry-token?ci=true | docker login --username AWS --password-stdin $PRIVADO_DOCKER_IMAGE
