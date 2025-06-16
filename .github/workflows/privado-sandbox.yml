@@ -1,4 +1,4 @@
-name: Privado Scan
+name: Privado Sanbox Scan
 on: push
     
 jobs:
