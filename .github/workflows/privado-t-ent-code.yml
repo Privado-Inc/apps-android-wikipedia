@@ -1,4 +1,4 @@
-name: Privado Scan
+name: Privado t.ent.code Scan
 on: push
     
 jobs:
